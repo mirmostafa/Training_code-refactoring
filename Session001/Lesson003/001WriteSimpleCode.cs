@@ -42,5 +42,14 @@ public static class Math
             return null;
         }
     }
+
+    public static int Calc_Srp_Va(int x, int y, bool add, bool sub)
+    {
+        if (add)
+            return x + y;
+        if (sub)
+            return x - y;
+        return 0;
+    }
 }
 #endregion

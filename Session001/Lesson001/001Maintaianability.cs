@@ -45,7 +45,7 @@ public class Tests
         Console.WriteLine(person2.Details());
         // Keep the console window open in debug mode.
         Console.WriteLine("Press any key to exit.");
-        _ = Console.ReadKey();
+        //_ = Console.ReadKey();
     }
 }
 
