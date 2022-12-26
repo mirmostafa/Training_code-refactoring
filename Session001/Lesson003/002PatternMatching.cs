@@ -73,6 +73,13 @@ internal static class _002PatternMatching
         _ => false
     };
 
+    /// <summary>
+    /// Determines whether the specified c is english.
+    /// </summary>
+    /// <param name="c">The c.</param>
+    /// <returns>
+    ///   <c>true</c> if the specified c is english; otherwise, <c>false</c>.
+    /// </returns>
     public static bool IsEnglish(char c) => (c is (>= 'A' and <= 'Z') or (>= 'a' and <= 'z'));
 }
 

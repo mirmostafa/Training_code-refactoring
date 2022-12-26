@@ -6,7 +6,22 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
+
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Lesson004\ExceptionValidation\**" />
+    <EmbeddedResource Remove="Lesson004\ExceptionValidation\**" />
+    <None Remove="Lesson004\ExceptionValidation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Lesson004\ExceptionValidation\Results\Result.cs" />
+    <Compile Include="Lesson004\ExceptionValidation\Results\Result.Generic.cs" />
+    <Compile Include="Lesson004\ExceptionValidation\Results\ResultBase.cs" />
+    <Compile Include="Lesson004\ExceptionValidation\Results\TryMethodResult.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />

@@ -1,13 +1,27 @@
-﻿using System.Diagnostics;
+﻿/*
+ * Test
+ * Copr. 2022
+ */
+using System.Diagnostics;
 
 namespace Session001.Models;
 
 internal interface IHuman
 {
-   int Age { get; }
+    /// <summary>
+    /// Gets the age.
+    /// </summary>
+    /// <value>
+    /// The age.
+    /// </value>
+    int Age { get; }
 
     string? Name { get; }
 
+    /// <summary>
+    /// Gets the birth year.
+    /// </summary>
+    /// <returns></returns>
     int GetBirthYear() => DateTime.Now.Year - Age;
 }
 
@@ -15,9 +29,15 @@ internal sealed class Circle : Shape
 {
     public override double Area => Radius * Math.PI;
 
+    /// <summary>
+    /// Gets or sets the diameter.
+    /// </summary>
+    /// <value>
+    /// The diameter.
+    /// </value>
     public double Diameter { get; set; }
 
-    public double Radius => Diameter / 2;
+    public double Radius => Diameter / 2;   // شعاع
 }
 
 internal class Officer : Person
