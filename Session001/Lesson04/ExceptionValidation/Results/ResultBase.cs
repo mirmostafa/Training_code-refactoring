@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-namespace Session001.Lesson004.ExceptionValidation.Results;
+namespace Session001.Lesson04.ExceptionValidation.Results;
 
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public abstract class ResultBase : IEquatable<ResultBase?>
@@ -19,7 +19,7 @@ public abstract class ResultBase : IEquatable<ResultBase?>
 
     public virtual bool IsSucceed
     {
-        get => _isSucceed ?? (Status is null or 0 or 200 && !Errors.Any());
+        get => _isSucceed ?? Status is null or 0 or 200 && !Errors.Any();
         init => _isSucceed = value;
     }
 

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Session001.Lesson003;
+namespace Session001.Lesson03;
 
 internal interface IHuman
 {
@@ -108,7 +108,7 @@ internal static class _002PatternMatching
 
     public static void D__Property(Person a)
     {
-        if ((a is { } b) && (b is Student and { Age: > 5 }))
+        if (a is { } b && b is Student and { Age: > 5 })
         {
         }
     }
@@ -126,7 +126,7 @@ internal static class _002PatternMatching
     /// <returns>
     ///   <c>true</c> if the specified c is english; otherwise, <c>false</c>.
     /// </returns>
-    public static bool IsEnglish(char c) => c is (>= 'A' and <= 'Z') or (>= 'a' and <= 'z');
+    public static bool IsEnglish(char c) => c is >= 'A' and <= 'Z' or >= 'a' and <= 'z';
 }
 
 internal sealed class Circle : Shape

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Lesson001;
 
-namespace Session001.Lesson003;
+namespace Session001.Lesson03;
 
 #region Write Simple Units of Code
 public static class Math

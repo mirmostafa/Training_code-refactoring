@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace Session001.Lesson003;
+
+namespace Session001.Lesson03;
 
 static class PersonCrud
 {

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Session001.Lesson004.ExceptionValidation.Results;
+namespace Session001.Lesson04.ExceptionValidation.Results;
 
 public class Result : ResultBase
 {

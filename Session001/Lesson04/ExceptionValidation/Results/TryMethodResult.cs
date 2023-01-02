@@ -1,6 +1,4 @@
-﻿using Session001.Lesson004.ExceptionValidation.Results;
-
-namespace Library.Results;
+﻿namespace Session001.Lesson04.ExceptionValidation.Results;
 
 public sealed class TryMethodResult<TResult> : Result<TResult?>
 {

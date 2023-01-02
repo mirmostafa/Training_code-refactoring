@@ -1,4 +1,4 @@
-﻿namespace Lesson001.Reliability;
+﻿namespace Session001.Lesson01;
 
 internal static class Math
 {
@@ -42,7 +42,7 @@ public class MathTest
     }
 
     [TestMethod]
-    [ExpectedException(typeof(System.DivideByZeroException))]
+    [ExpectedException(typeof(DivideByZeroException))]
     public void Test04_DivisonByZeroTest()
     {
         var a = 1;

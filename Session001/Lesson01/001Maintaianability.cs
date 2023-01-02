@@ -1,5 +1,4 @@
-﻿
-namespace Lesson001.Maintaianability;
+﻿namespace Session001.Lesson01;
 
 // reference: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-write-a-copy-constructor
 internal class Person
@@ -21,7 +20,7 @@ internal class Person
 
     public string Name { get; set; }
 
-    public string Details() 
+    public string Details()
         => Name + " is " + Age.ToString();
 }
 

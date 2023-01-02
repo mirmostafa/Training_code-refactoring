@@ -11,16 +11,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Lesson004\ExceptionValidation\**" />
-    <EmbeddedResource Remove="Lesson004\ExceptionValidation\**" />
-    <None Remove="Lesson004\ExceptionValidation\**" />
+    <Compile Remove="Lesson04\ExceptionValidation\**" />
+    <EmbeddedResource Remove="Lesson04\ExceptionValidation\**" />
+    <None Remove="Lesson04\ExceptionValidation\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Lesson004\ExceptionValidation\Results\Result.cs" />
-    <Compile Include="Lesson004\ExceptionValidation\Results\Result.Generic.cs" />
-    <Compile Include="Lesson004\ExceptionValidation\Results\ResultBase.cs" />
-    <Compile Include="Lesson004\ExceptionValidation\Results\TryMethodResult.cs" />
+    <Compile Include="Lesson04\ExceptionValidation\Results\Result.cs" />
+    <Compile Include="Lesson04\ExceptionValidation\Results\Result.Generic.cs" />
+    <Compile Include="Lesson04\ExceptionValidation\Results\ResultBase.cs" />
+    <Compile Include="Lesson04\ExceptionValidation\Results\TryMethodResult.cs" />
   </ItemGroup>
 
   <ItemGroup>

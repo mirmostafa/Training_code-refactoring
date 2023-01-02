@@ -1,4 +1,4 @@
-﻿namespace Lesson001.PerformanceEfficiency;
+﻿namespace Session001.Lesson01;
 
 //! Use <Benchmark>
 
@@ -31,7 +31,7 @@ public class Tests
             }
         }
 
-        
+
         //! Local method
         static IEnumerable<int> getNumbers()
         {

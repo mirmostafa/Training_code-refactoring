@@ -1,4 +1,4 @@
-﻿namespace Session001.Lesson003;
+﻿namespace Session001.Lesson03;
 
 [TestClass]
 public class MyTests

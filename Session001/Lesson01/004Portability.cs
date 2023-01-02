@@ -1,4 +1,4 @@
-﻿namespace Lesson001;
+﻿namespace Session001.Lesson01;
 
 internal static class Math
 {

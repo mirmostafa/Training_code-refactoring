@@ -2,7 +2,7 @@
 
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Session001.Lesson002;
+namespace Session001.Lesson02;
 
 [TestClass]
 public class Math
@@ -122,6 +122,6 @@ public class Math
         var numbers = Enumerable.Range(1, 4);
         var odds = FindEvens_Obey2(numbers, false).ToList();
         var evens = FindEvens_Obey2(numbers, true).ToList(); //! Best practice: Add `numbers.ToArray()`
-    } 
+    }
     #endregion
 }
