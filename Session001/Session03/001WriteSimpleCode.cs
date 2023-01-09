@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Lesson001;
-
 namespace Session001.Lesson03;
 
 #region Write Simple Units of Code

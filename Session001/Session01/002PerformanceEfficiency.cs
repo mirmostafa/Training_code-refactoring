@@ -3,7 +3,7 @@
 //! Use <Benchmark>
 
 [TestClass]
-public class Tests
+public class Tests001
 {
     [TestMethod]
     public void LazyLoading()

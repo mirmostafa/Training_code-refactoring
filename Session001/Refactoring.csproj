@@ -8,19 +8,21 @@
     <IsPackable>false</IsPackable>
 
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
+
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Lesson04\ExceptionValidation\**" />
-    <EmbeddedResource Remove="Lesson04\ExceptionValidation\**" />
-    <None Remove="Lesson04\ExceptionValidation\**" />
+    <Compile Remove="Session04\ExceptionValidation\**" />
+    <EmbeddedResource Remove="Session04\ExceptionValidation\**" />
+    <None Remove="Session04\ExceptionValidation\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Lesson04\ExceptionValidation\Results\Result.cs" />
-    <Compile Include="Lesson04\ExceptionValidation\Results\Result.Generic.cs" />
-    <Compile Include="Lesson04\ExceptionValidation\Results\ResultBase.cs" />
-    <Compile Include="Lesson04\ExceptionValidation\Results\TryMethodResult.cs" />
+    <Compile Include="Session04\ExceptionValidation\Results\Result.cs" />
+    <Compile Include="Session04\ExceptionValidation\Results\Result.Generic.cs" />
+    <Compile Include="Session04\ExceptionValidation\Results\ResultBase.cs" />
+    <Compile Include="Session04\ExceptionValidation\Results\TryMethodResult.cs" />
   </ItemGroup>
 
   <ItemGroup>

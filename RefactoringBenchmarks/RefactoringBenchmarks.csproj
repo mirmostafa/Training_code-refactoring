@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Session001\Session001.csproj" />
+    <ProjectReference Include="..\Session001\Refactoring.csproj" />
   </ItemGroup>
 
 </Project>

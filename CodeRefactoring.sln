@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefactoringBenchmarks", "RefactoringBenchmarks\RefactoringBenchmarks.csproj", "{2DD25C71-B142-4DB2-B1AF-FA4A470DFECA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session001", "Session001\Session001.csproj", "{5E8B3C12-EBA0-4E18-BE98-9700AC886B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refactoring", "Session001\Refactoring.csproj", "{5E8B3C12-EBA0-4E18-BE98-9700AC886B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

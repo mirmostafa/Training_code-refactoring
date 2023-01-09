@@ -1,6 +1,6 @@
 ﻿namespace Session001.Lesson01;
 
-internal static class Math
+file static class Math
 {
     /// <summary>
     /// Divides `a` to `b`.
