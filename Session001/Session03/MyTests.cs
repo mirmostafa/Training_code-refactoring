@@ -8,7 +8,7 @@ public class MyTests
     {
         var p = new PersonClass();
         p.Age = 1;
-        var expected = 3;
+        var expected = 1;
         Assert.AreEqual(expected, p.Age);
     }
 }

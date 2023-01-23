@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace Refactoring.Session08;
+﻿namespace Refactoring.Session08;
 
 internal static class Math
 {
@@ -29,12 +28,21 @@ internal static class Math
 public class MathTest
 {
     [TestMethod]
-    public void Div_PositiveTest()
+    [ExpectedException(typeof(DivideByZeroException))]
+    public void Div_DivisionByZeroTest()
     {
-        var a = 10;
-        var b = 5;
+        var a = 1;
+        var b = 0;
         var r = Math.Div(a, b);
-        Assert.AreEqual(2, r);
+        Assert.AreEqual(1, r);
+    }
+
+    [TestMethod]
+    public void Div_FloatTest()
+    {
+        var a = -10;
+        var b = -3;
+        _ = Math.Div(a, b);
     }
 
     [TestMethod]
@@ -47,21 +55,20 @@ public class MathTest
     }
 
     [TestMethod]
-    public void Div_FloatTest()
+    public void Div_PositiveTest()
+    {
+        var a = 10;
+        var b = 5;
+        var r = Math.Div(a, b);
+        Assert.AreEqual(2, r);
+    }
+    [TestMethod]
+    public void DivProtected_NegativeTest()
     {
         var a = -10;
-        var b = -3;
-        _ = Math.Div(a, b);
-    }
-
-    [TestMethod]
-    [ExpectedException(typeof(DivideByZeroException))]
-    public void Div_DivisonByZeroTest()
-    {
-        var a = 1;
-        var b = 0;
-        var r = Math.Div(a, b);
-        Assert.AreEqual(1, r);
+        var b = -5;
+        var r = Math.DivProtected(a, b);
+        Assert.AreEqual(2, r);
     }
 
     [TestMethod]
@@ -72,16 +79,6 @@ public class MathTest
         var r = Math.DivProtected(a, b);
         Assert.AreEqual(2, r);
     }
-
-    [TestMethod]
-    public void DivProtected_NegativeTest()
-    {
-        var a = -10;
-        var b = -5;
-        var r = Math.DivProtected(a, b);
-        Assert.AreEqual(2, r);
-    }
-
     //x[TestMethod]
     //xpublic void DivProtected_DirtyTest()
     //x{
