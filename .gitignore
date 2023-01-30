@@ -1,8 +1,10 @@
-RefactoringBenchmarks/bin/
-RefactoringBenchmarks/obj/
-Session001/bin/
-Session001/obj/
-Session002/bin/
-Session002/obj/
 .vs/
 *.lutconfig
+LearnUnitTesting/src/Infrastructure/bin/
+LearnUnitTesting/src/Infrastructure/obj/
+LearnUnitTesting/tests/Infrastructure.Test/bin/
+LearnUnitTesting/tests/Infrastructure.Test/obj/
+Refactoring/bin/
+Refactoring/obj/
+RefactoringBenchmarks/bin/
+RefactoringBenchmarks/obj/
