@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-namespace Refactoring.Session04.ExceptionValidation.Results;
+namespace Refactoring.Results;
 
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public abstract class ResultBase : IEquatable<ResultBase?>

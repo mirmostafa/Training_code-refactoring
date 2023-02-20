@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Refactoring.Session04.ExceptionValidation.Results;
+namespace Refactoring.Results;
 
 public class Result<TValue> : ResultBase
 {

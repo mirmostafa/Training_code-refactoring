@@ -1,9 +1,9 @@
-﻿namespace Refactoring.Session04.ExceptionValidation.Results;
+﻿namespace Refactoring.Results;
 
 public sealed class TryMethodResult<TResult> : Result<TResult?>
 {
     public TryMethodResult(bool isSucceed, TResult? result) : base(result)
-        => this.IsSucceed = isSucceed;
+        => IsSucceed = isSucceed;
 
     public static explicit operator bool(TryMethodResult<TResult?> result) => result.IsSucceed;
 

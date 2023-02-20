@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using Refactoring.Session04.ExceptionValidation.Results;
+using Refactoring.Results;
 
 namespace Refactoring.Session05;
 
