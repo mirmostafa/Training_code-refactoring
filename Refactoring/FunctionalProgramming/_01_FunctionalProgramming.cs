@@ -52,9 +52,12 @@ public class FunctionalProgramming
     [TestMethod]
     public void _02_FunctionAsParameter()
     {
+        
         var numbers = Enumerable.Range(10, 100);
         var odds = new List<int>();
 
+
+        //! Straightforward way
         foreach (var number in numbers)
         {
             if (number % 2 == 1)
@@ -63,10 +66,11 @@ public class FunctionalProgramming
             }
         }
 
-        //x Immutable
+        //! Initialization
+        //x Immutation
         odds = Where(numbers, n => n % 2 == 1).ToList();
 
-        // Re-start
+        //! Re-start
         Fold(numbers, n => n % 2 == 1, odds.Add);
     }
 
@@ -303,43 +307,4 @@ public class FunctionalProgramming
 
     // Custom Delegate
     public delegate int AddDelegate(int x, int y);
-}
-
-internal static class FunctionCompositionExtensions
-{
-    public static Func<TResult1> Compose<TResult1, TArg>(this Func<TResult1> create, Action<TResult1, TArg> action, TArg arg)
-        => () =>
-        {
-            var result = create();
-            action?.Invoke(result, arg);
-            return result;
-        };
-
-    public static Func<TResult1> Compose<TResult1, TArg>(this Func<TResult1> create, Action<TArg> action, Func<TResult1, TArg> getArg)
-        => () =>
-        {
-            var result = create();
-            action?.Invoke(getArg(result));
-            return result;
-        };
-
-    public static Func<TResult1> Compose<TResult1, TArg>(this Func<TResult1> create, Action<TResult1, TArg> action, Func<TResult1, TArg> getArg)
-        => () =>
-        {
-            var result = create();
-            action?.Invoke(result, getArg(result));
-            return result;
-        };
-
-    public static Func<TResult2> Compose<TResult1, TResult2>(this Func<TResult1> create, Func<TResult1, TResult2> func)
-        => () => func(create());
-
-    public static Func<Result<TResult2>> Compose<TResult1, TResult2>(this Func<Result<TResult1>> create, Func<TResult1, Result<TResult2>> func, Func<Result<TResult1>, Result<TResult2>>? onFail = null)
-        => () =>
-        {
-            var result = create();
-            return result.IsSucceed
-                ? func(result.Value)
-                : onFail?.Invoke(result) ?? Result<TResult2>.From(result, default!);
-        };
 }
