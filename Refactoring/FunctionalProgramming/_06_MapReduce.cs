@@ -14,6 +14,7 @@ public class MapReduce
 
         // Print the result
         Console.WriteLine(string.Join(", ", doubled));
+        
     }
 
     [TestMethod]

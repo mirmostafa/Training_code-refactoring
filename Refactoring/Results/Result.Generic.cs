@@ -1,7 +1,10 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Refactoring.Results;
 
+[DebuggerStepThrough]
+[StackTraceHidden]
 public class Result<TValue> : ResultBase
 {
     public Result(in TValue value, in object? status = null, in string? message = null) : base(status, message)

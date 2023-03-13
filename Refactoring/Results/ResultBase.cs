@@ -4,6 +4,8 @@ using System.Text;
 namespace Refactoring.Results;
 
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
+[DebuggerStepThrough]
+[StackTraceHidden]
 public abstract class ResultBase : IEquatable<ResultBase?>
 {
     private bool? _isSucceed;

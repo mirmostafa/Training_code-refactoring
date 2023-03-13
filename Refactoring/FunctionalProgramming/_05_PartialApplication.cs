@@ -31,7 +31,7 @@ public class PartialApplication
 
     //! Just for review
     [TestMethod]
-    public void _02_AnOtherSample()
+    public void _02_DependencyInjection()
     {
         // Define a function that takes two parameters
         var add = (int x, int y) => x + y;
@@ -45,10 +45,10 @@ public class PartialApplication
         Assert.AreEqual(3, result);
     }
 
-    ////! Requires EF.
+    //! Requires EF.
 
     //[TestMethod]
-    //public void _03_DependncyIndejct()
+    //public void _03_DependencyInjection()
     //{
     //    var getById = (long id) => this.GetById<Person>(id);
     //    _ = this.UpdateEntity(getById, 10);
@@ -70,7 +70,6 @@ public class PartialApplication
 
     //private TEntity UpdateEntity<TEntity>(Func<long, TEntity> getById, long id)
     //    //where TEntity : IHasUpdateDate
-
     //{
     //    var entity = getById(id);
     //    entity.UpdateDate = DateTime.Now;

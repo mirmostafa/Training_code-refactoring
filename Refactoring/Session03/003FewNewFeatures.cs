@@ -30,7 +30,7 @@ internal class Logger : ILogger
     { }
 }
 
-internal class RquiredPerson
+internal class RequiredPerson
 {
     public int Age { get; set; }
 
@@ -51,8 +51,8 @@ public class Z_003Tests
     public void RquiredPersonTest()
     {
         //! Error
-        //x var p = new RquiredPerson();
+        //x var p = new RequiredPerson();
 
-        _ = new RquiredPerson { FirstName = "Ali" };
+        _ = new RequiredPerson { FirstName = "Ali" };
     }
 }
